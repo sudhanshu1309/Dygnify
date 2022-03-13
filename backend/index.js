@@ -1,10 +1,13 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const cookieParser = require("cookie-parser");
+var cors = require("cors");
 
 const port = 8000;
 const uri = "mongodb://localhost:27017/dygnify";
 
+//routes
 const userRoutes = require("./routes/personal");
 const businessRoutes = require("./routes/business");
 const loanRoutes = require("./routes/loan");

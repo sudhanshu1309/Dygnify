@@ -12,6 +12,7 @@ const loanSchema = new Schema({
   },
   intRate: {
     type: Number,
+    required: true,
   },
   tenure: {
     type: Date,

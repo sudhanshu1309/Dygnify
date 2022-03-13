@@ -18,6 +18,7 @@ const personalSchema = new Schema({
   },
   mobNo: {
     type: Number,
+    require: true,
   },
 });
 
